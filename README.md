@@ -30,8 +30,7 @@ I defined some custom configuration inside the `config` folder.
 
 The first one is `args.py` which contains the hyperparameters. In my baseline, I am using <a href="https://github.com/lebrice/SimpleParsing">simple-parsing</a> to parse the arguments due to its clean interface. For that purpose, I define a simple `dataclass` in the `args.py` file which we later use to aprse our arguments.
 
-The `config.py` mainly consists of some paths configurations and logging behavior. I am also writing logs into `.log` files but you can configure it according to your requriements.
-
+The `config.py` mainly consists of some paths configurations and logging behavior. I am also writing logs into `.log` files but you can configure it according to your requriements. In case you wan tto write *logs*, create a `logs` folder first in the main directory.
 ## Training script
 This is the `main` file of the project. FIrst of all, I am using <a href="https://albumentations.ai/">albimentations</a> to preprocess the data. Then I have some functions to create dataloaders.
 
