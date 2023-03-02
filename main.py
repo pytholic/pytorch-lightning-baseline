@@ -106,7 +106,7 @@ def main():
     train_subset, val_subset = create_subset(trainset, valset)
     logger.info(
         f"""Total training image: {len(train_subset)}
-Total training image: {len(val_subset)}"""
+Total validation image: {len(val_subset)}"""
     )
 
     # logger.debug(len(train_subset))
