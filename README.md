@@ -16,6 +16,7 @@ clearml
 rich
 tqdm
 split-folders
+simple-parsing
 ```
 
 # Details
