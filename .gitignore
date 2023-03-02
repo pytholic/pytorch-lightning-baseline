@@ -1,2 +1,9 @@
 *.zip
 data/
+logs/
+*.log
+*.jpeg
+*.jpg
+*.png
+*.JPEG
+*.PNG
