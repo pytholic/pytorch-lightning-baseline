@@ -1,5 +1,4 @@
 *.zip
-data/
 logs/
 models/
 *.pt

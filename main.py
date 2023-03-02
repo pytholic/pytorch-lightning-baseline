@@ -5,16 +5,17 @@ import pytorch_lightning as pl
 import torch
 from albumentations.pytorch import ToTensorV2
 from clearml import Task
-from config import config
-from config.args import Args
-from config.config import logger
-from dataloader import *
 from matplotlib import pyplot as plt
-from model import Classifier
 from pytorch_lightning.callbacks import ModelCheckpoint, RichProgressBar
 from pytorch_lightning.callbacks.progress.rich_progress import RichProgressBarTheme
 from simple_parsing import ArgumentParser
 from torch.utils.data import Subset
+
+from config import config
+from config.args import Args
+from config.config import logger
+from dataloader import *
+from model import Classifier
 
 
 # Preprocessing function

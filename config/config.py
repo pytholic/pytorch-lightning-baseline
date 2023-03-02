@@ -2,7 +2,7 @@ from pathlib import Path
 
 # Directories
 BASE_DIR = Path(__file__).parent.parent.parent.absolute()
-PROJECT_DIR = Path(BASE_DIR, "pytorch-lightning")
+PROJECT_DIR = Path(BASE_DIR, "pytorch-lightning-baseline")
 CONFIG_DIR = Path(PROJECT_DIR, "config")
 DATA_DIR = Path(BASE_DIR, "data/images_splitted")
 LOGS_DIR = Path(PROJECT_DIR, "logs")
