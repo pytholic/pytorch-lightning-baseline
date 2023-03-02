@@ -5,17 +5,16 @@ import pytorch_lightning as pl
 import torch
 from albumentations.pytorch import ToTensorV2
 from clearml import Task
-from matplotlib import pyplot as plt
-from pytorch_lightning.callbacks import ModelCheckpoint, RichProgressBar
-from pytorch_lightning.callbacks.progress.rich_progress import RichProgressBarTheme
-from simple_parsing import ArgumentParser
-from torch.utils.data import Subset
-
 from config import config
 from config.args import Args
 from config.config import logger
 from dataloader import *
+from matplotlib import pyplot as plt
 from model import Classifier
+from pytorch_lightning.callbacks import ModelCheckpoint, RichProgressBar
+from pytorch_lightning.callbacks.progress.rich_progress import RichProgressBarTheme
+from simple_parsing import ArgumentParser
+from torch.utils.data import Subset
 
 
 # Preprocessing function
@@ -105,6 +104,10 @@ def main():
 
     # Create subset
     train_subset, val_subset = create_subset(trainset, valset)
+    logger.info(
+        f"""Total training image: {len(train_subset)}
+Total training image: {len(val_subset)}"""
+    )
 
     # logger.debug(len(train_subset))
     # logger.debug(len(val_subset))
