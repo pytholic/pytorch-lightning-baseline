@@ -1,6 +1,10 @@
 *.zip
 data/
 logs/
+models/
+*.pt
+*.pth
+*.ckpt
 *.log
 *.jpeg
 *.jpg
