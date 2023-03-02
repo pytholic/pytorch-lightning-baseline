@@ -1,5 +1,5 @@
 # Overview
-The main goal of these baselines is to have a skeleton code base structure for common frameworks with some nice configurations. Some of the libraries and frameworks I will be usign are listed below.
+The main goal of this baseline is to have a skeleton code base structure for pytorch lightning with some nice configurations. Some of the libraries and frameworks I will be usign are listed below.
 
 * <a href="https://pypi.org/project/tqdm/">tqdm</a>
 * <a href="https://docs.python.org/3/library/logging.html">logging</a>
@@ -21,7 +21,7 @@ simple-parsing
 
 # Details
 ## Dataset
-I downloaded and use <a href="https://www.kaggle.com/datasets/alessiocorrado99/animals10">Animal-10</a> function directly. dataset to make this demo. Then I useds `utils/reduce.py` to reduce the datatset size to approx. 50 examplesper category for quick testing.
+I downloaded and use <a href="https://www.kaggle.com/datasets/alessiocorrado99/animals10">Animal-10</a> function directly. dataset to make this demo. Then I useds `utils/reduce.py` to reduce the datatset size to approx. 50 examples per category for quick testing.
 
 I wrote custom dataloader to process and load this data located at `utils/dataloader.py`. It can be modified depending on the use case. We can also just use <a href="https://pytorch.org/vision/main/generated/torchvision.datasets.ImageFolder.html">ImageFolder</a> dataloader directly.
 
