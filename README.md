@@ -41,5 +41,7 @@ Then we define our checkpoint and progress bar behavior. Initialize the `Trainer
 ## Test script
 I am not including any test script here. That behavior depends on the pplication. Also I am planning to create some web apps using this baseline, so I will be wrtigin test scripts there. If I have time, I will include it here later.
 
+**Update**: I ended up writign the test script `test.py`. It will load the model and return the prediction results both in the CLI as well as in plot form.
+
 # License
 Feel free to use these baselines in your projects.

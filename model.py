@@ -1,10 +1,11 @@
 import pytorch_lightning as pl
 import torch
 import torchmetrics
-from config.args import Args
 from simple_parsing import ArgumentParser
 from torch import nn
 from torch.nn import functional as F
+
+from config.args import Args
 
 parser = ArgumentParser()
 parser.add_arguments(Args, dest="options")
@@ -56,6 +57,10 @@ class Classifier(pl.LightningModule):
         self.accuracy = torchmetrics.Accuracy(
             task="multiclass", num_classes=args.num_classes
         )
+
+    def forward(self, x):
+        x = self.model(x)
+        return x
 
     def cross_entropy_loss(self, logits, labels):
         return F.nll_loss(logits, labels)
